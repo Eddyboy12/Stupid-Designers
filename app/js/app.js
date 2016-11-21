@@ -108,7 +108,13 @@ function sizeBox(boxName, param1, param2){
 //function to nest two divs.
 function createBoxInsideWith(boxName, propertyType, propertyValue){
   if($('#'+boxName).length > 0){
-    $('#'+boxName).append(drawBoxWith(propertyType, propertyValue));
+    if(propertyType == 'id'){
+    var html = $('<div>', {id: propertyValue});
+    $('#'+boxName).append(html);
+  }else if(propertyType == 'class'){
+    var html = $('<div>').addClass(propertyValue);
+    $('#'+boxName).append(html);
+  }
   }else if($('#'+boxName).length === 0){
         if($('.'+boxName).length > 0){
 

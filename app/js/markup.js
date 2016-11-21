@@ -16,4 +16,4 @@ addToBox('dongBong', 'id', 'milk');
 positionBox('milk', 'top', '50%', 'left', '10%');
 sizeBox('milk', 20, 50);
 boxColour('milk', baseColour);
-createBoxInsideWith('milk', 'id', 'farci');
+createBoxInsideWith('milk', 'class', 'fdsadsa');
