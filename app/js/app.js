@@ -71,3 +71,37 @@ function pauseAndRun(time, functionName, functionParramater){
       functionName(functionParramater);
   },time);
 }
+//function for sizing boxes
+function sizeBox(boxName, param1, param2){
+  if($('#'+boxName).length > 0){
+      if(param1 == 0){
+        //do nothing
+      }else{
+        param1txt = param1+'%';
+        $("#"+boxName).css('height', param1txt);
+      }
+        if(param2 === undefined){
+          console.log("tomYum soup spilled over my keyboard");
+        }else{
+          param2txt = param2+'%';
+          $("#"+boxName).css('width', param2txt);
+        }
+  }else if($('#'+boxName).length === 0){
+    if($('.'+boxName).length > 0){
+      if(param1 == 0){
+        //do nothing
+      }else{
+        param1txt = param1+'%';
+        $("."+boxName).css('height', param1txt);
+      }
+        if(param2 === undefined){
+          console.log("tomYum soup spilled over my keyboard");
+        }else{
+          param2txt = param2+'%';
+          $("."+boxName).css('width', param2txt);
+        }
+    }else{
+      alert("Looks like a box you were referencing doesn't exist");
+    }
+  }
+}
