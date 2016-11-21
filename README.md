@@ -16,7 +16,7 @@ After you are complete your HTML page should look a bit like this.
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta name="viewport" content="device-width=width" initialscale="1.0">
+        <title>Site Name</title>
     </head>
     <body class="clearfix">
           <script type="text/javascript" src="js/jquery.js"></script>
