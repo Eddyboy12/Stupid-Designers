@@ -105,3 +105,15 @@ function sizeBox(boxName, param1, param2){
     }
   }
 }
+//function to nest two divs.
+function createBoxInsideWith(boxName, propertyType, propertyValue){
+  if($('#'+boxName).length > 0){
+    $('#'+boxName).append(drawBoxWith(propertyType, propertyValue));
+  }else if($('#'+boxName).length === 0){
+        if($('.'+boxName).length > 0){
+
+        }else{
+          alert("Looks like a box you were referencing doesn't exist");
+        }
+  }
+}
