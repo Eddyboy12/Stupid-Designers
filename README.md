@@ -31,6 +31,12 @@ A sample project file has been included under markup.js...
 
     drawBoxWith('class', 'tomato');  /** Creates box or div with class tomato **/
     addToBox('tomato', 'id', 'chicken'); /** Adds to div with class tomato id chicken**/
-    positionBox('tomato', 'top', '10%'); /**  Positions the box**/
-
+    positionBox('tomato', 'top', '10%'); /**  Positions the box with either id or class tomato**/
+    sizeBox('tomato', 20, 50); /** Resizes the box with either id or class tomato**/
+    var randomColour = "#2a3a6f"; /**   You know what that is**/
+    boxColour('tomato', randomColour); /**  Colours box with variable "randomColour" **/
+    createBoxInsideWith('milk', 'class', 'fdsadsa'); /**  Creates div which is nested in div with class milk **/
+    pauseAndRun(5000, destroyBox, "tomato"); /**  waits 5 seconds then destroys box "tomato" **/
+    destroyBox("milk") /**  destroys box "milk" **/
 ```
+We hope you have fun with this library :).
