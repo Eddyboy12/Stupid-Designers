@@ -1,3 +1,4 @@
+
 //function for drawing divs
 function drawBox(type, typeValue){
   if(type == 'id'){
@@ -20,5 +21,18 @@ function addTo(boxName, type, typeValue){
 function position_by_id(boxName, selector1, value1, selector2, value2){
   $("#"+boxName).css('position', 'absolute');
   $("#"+boxName).css(selector1, value1);
+  if(selector2 && value2 === undefined){
+      console.log("Undefined parram 2 at position_by_id function. Please ignore.")
+  }else if(selector2 && value2 != undefined)
   $("#"+boxName).css(selector2, value2);
+}
+//function for really stupid Stupid-Designers
+function helpME(){
+  window.location = "https://github.com/Varun-Sethu/Stupid-Designers";
+}
+//change colour function
+function colour(target, colour){
+    if(document.getElementById(target) != null){
+
+    }
 }
