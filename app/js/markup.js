@@ -1,5 +1,9 @@
+//colour declarations
 var baseColour = "#000";
-drawBox('class', 'tomato');
-addTo('tomato', 'id', 'chicken');
-position_by_id('chicken', 'top', '10%');
-colour('tomato', baseColour);
+
+//style page
+drawBoxWith('class', 'tomato');
+addToBox('tomato', 'id', 'chicken');
+positionBox('tomato', 'top', '10%');
+boxColour('tomato', baseColour);
+pauseAndRun(5000, destroyBox, 'tomato');
