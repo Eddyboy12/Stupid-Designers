@@ -1,4 +1,3 @@
-
 //function for drawing divs
 function drawBox(type, typeValue){
   if(type == 'id'){
@@ -32,7 +31,13 @@ function helpME(){
 }
 //change colour function
 function colour(target, colour){
-    if(document.getElementById(target) != null){
-
-    }
+  if ($('#'+target).length > 0) {
+    $("#"+target).css('background-color', colour);
+  }else if ($('#'+target).length === 0){
+     if($('.'+target).length > 0){
+       $("."+target).css('background-color', colour);
+     }else if  ($('.'+target).length === 0){
+       alert("Looks like a box you were referencing doesn't exist");
+     }
+  }
 }
